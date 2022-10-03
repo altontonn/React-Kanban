@@ -1,7 +1,10 @@
 import React from 'react';
 
-const Mission = () => (
-  <div />
-);
-
+function Mission() {
+  return (
+    <div>
+      <p>Mission</p>
+    </div>
+  );
+}
 export default Mission;
