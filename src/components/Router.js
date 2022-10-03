@@ -9,7 +9,7 @@ function RouterNavLink() {
     <Routes>
       <Route path="/missions" element={<Mission />} />
       <Route path="/rockets" element={<Rocket />} />
-      <Route path="/" element={<Profile />} />
+      <Route exact strict path="/" element={<Profile />} />
     </Routes>
   );
 }
