@@ -11,6 +11,7 @@
 .navbarMenu {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
 }
 
 .logo {
@@ -43,13 +44,18 @@
 
 .menu ul li:nth-child(2)::after {
   content: "|";
+  margin-right: 0.5rem;
 }
 
-.menu ul li:nth-child(3) {
+/* .menu ul li:nth-child(3) {
   text-decoration: underline;
-}
+} */
 
 .menu ul li a {
   text-decoration: none;
   padding: 10px;
+}
+
+.menu a.active {
+  text-decoration: underline;
 }
