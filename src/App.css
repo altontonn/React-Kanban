@@ -59,3 +59,24 @@
 .menu a.active {
   text-decoration: underline;
 }
+ table button {
+  font-size: 0.8rem;
+  width: 7rem;
+  padding: 0.5rem 0;
+  border-radius: 0.3rem;
+  border: 0.4px solid black;
+  margin-top: 25%;
+ }
+
+ table span{
+  font-size: 0.8rem;
+  width: 7rem;
+  border-radius: 0.3rem;
+  margin-top: 29%;
+  text-align: center;
+  background-color: #18A2B8;
+ }
+
+ table tbody:nth-child(even){
+  background-color: #ececec;
+ }
