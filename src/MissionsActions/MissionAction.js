@@ -27,7 +27,7 @@ export const misssionReducer = (state = initalstate, action) => {
   switch (action.type) {
     case 'spacehub/missions/GET_MISSION/fulfilled':
       console.log(action.type);
-      console.log(action.payload.mission)
+      console.log(action.payload.mission);
       return action.payload.mission;
     default:
       return state;
