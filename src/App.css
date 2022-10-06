@@ -51,6 +51,7 @@
 
 .card {
   border: none;
+  margin-bottom: 1rem;
 }
 
 .menu ul li a {
@@ -63,7 +64,7 @@
 }
 
 .cardImg img {
-  width: 300px;
+  width: 250px;
   margin-right: 1rem;
 }
 
@@ -71,6 +72,17 @@
   font-size: 1.5rem;
 }
 
+.p2 {
+  font-size: 15px;
+}
+
 .card-1 {
   display: flex;
+}
+
+.button-a {
+  background: rgb(53, 181, 231);
+  border: none;
+  color: #fff;
+  padding: 5px;
 }

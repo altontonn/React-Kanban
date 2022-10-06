@@ -23,6 +23,7 @@ function RocketList() {
             <div className="cardContent">
               <p className="p1">{rocket.rocket_name}</p>
               <p className="p2">{rocket.description}</p>
+              <button className="button-a" type="button">Reserve Rocket</button>
             </div>
           </div>
         </div>
