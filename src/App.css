@@ -60,23 +60,25 @@
   text-decoration: underline;
 }
  table button {
+  display: inline-block;
+  text-align: center;
   font-size: 0.8rem;
   width: 7rem;
   padding: 0.5rem 0;
   border-radius: 0.3rem;
   border: 0.4px solid black;
-  margin-top: 25%;
+
  }
 
- table span{
+ .badge-primary{
+  display: block;
   font-size: 0.8rem;
   width: 7rem;
   border-radius: 0.3rem;
-  margin-top: 29%;
   text-align: center;
   background-color: #18A2B8;
  }
 
- table tbody:nth-child(even){
+  table tbody tr:nth-child(even){
   background-color: #ececec;
  }
