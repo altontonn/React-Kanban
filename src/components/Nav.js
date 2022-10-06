@@ -9,7 +9,7 @@ function Nav() {
     <div className="main">
       <div className="navbarMenu">
         <div className="logo">
-          <img className="img" src={pic} alt="logo" />
+          <img className="img" src={pic} alt="saturn" />
           <h1>Space Travelers Hub</h1>
         </div>
         <div className="menu">

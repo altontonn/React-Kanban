@@ -6,6 +6,7 @@ import Mission from './Mission';
 
 function Missions() {
   const missions = useSelector((state) => state.mission);
+  console.log(missions);
   const dispatch = useDispatch();
   useEffect(() => {
     setTimeout(() => {
