@@ -1,18 +1,37 @@
-// const JOIN_MISSION = 'spacehub/missions/JOIN_MISSION';
-// const LEAVE_MISSION = 'spacehub/missions/LEAVE_MISSION';
+const JOIN_MISSION = 'spacehub/missions/JOIN_MISSION';
+const LEAVE_MISSION = 'spacehub/missions/LEAVE_MISSION';
 
-// // Create mision Action
-// export const joinMission = (id) => ({
-//   type: JOIN_MISSION,
-//   id,
-// });
 
-// // Create Leave mission action
-// const leaveMisson = (id) => ({
-//   type: LEAVE_MISSION,
-//   id,
-// });
+const initialSate = {
+    reserved:[],
+    joined:[],
+}
+// Create mision Action
+export const joinMission = (payload) => ({
+  type: JOIN_MISSION,
+  payload,
+});
 
-// const profileReducer = () => {
+// Create Leave mission action
+const leaveMisson = (payload) => ({
+  type: LEAVE_MISSION,
+  payload,
+});
 
-// };
+const profileReducer = (state=initialSate, action={}) => {
+    switch (action.type) {
+        case JOIN_MISSION:
+            return {
+                ...state,
+                joined:[...state.joined, action.payload],
+            }
+        case LEAVE_MISSION:
+            return {
+                ...state,
+                joined: state.joined.filter(item => item !== action.payload)
+            }
+        default: return state;    
+    }
+};
+
+export default profileReducer;
