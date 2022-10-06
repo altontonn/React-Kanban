@@ -17,12 +17,5 @@ export const rocketReducer = (state = initialState, action) => {
 export const fetchRockets = createAsyncThunk(DISPLAY, async () => {
   const response = await fetch('https://api.spacexdata.com/v3/rockets');
   const rockets = await response.json();
-  // eslint-disable-next-line
-  // rockets.map((rocket) => ({
-  //   id: rocket.id,
-  //   name: rocket.rocket_name,
-  //   description: rocket.description,
-  //   image: rocket.flickr_images,
-  // }));
   return { rocket: rockets };
 });
