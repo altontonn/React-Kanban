@@ -12,6 +12,8 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+  border-bottom: 1px solid #d1d0d0;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -47,9 +49,10 @@
   margin-right: 0.5rem;
 }
 
-/* .menu ul li:nth-child(3) {
-  text-decoration: underline;
-} */
+.card {
+  border: none;
+  margin-bottom: 1rem;
+}
 
 .menu ul li a {
   text-decoration: none;
@@ -58,4 +61,28 @@
 
 .menu a.active {
   text-decoration: underline;
+}
+
+.cardImg img {
+  width: 250px;
+  margin-right: 1rem;
+}
+
+.p1 {
+  font-size: 1.5rem;
+}
+
+.p2 {
+  font-size: 15px;
+}
+
+.card-1 {
+  display: flex;
+}
+
+.button-a {
+  background: rgb(53, 181, 231);
+  border: none;
+  color: #fff;
+  padding: 5px;
 }
