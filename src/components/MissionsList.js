@@ -19,7 +19,7 @@ function Missions() {
       <Table bordered>
         <thead>
           <tr>
-            <th> Mission</th>
+            <th> Missions</th>
             <th>Description</th>
             <th> Status</th>
             <th> &nbsp;</th>
