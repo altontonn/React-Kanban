@@ -1,9 +1,28 @@
 import React from 'react';
+import { Table } from 'react-bootstrap';
 
 function Profile() {
   return (
     <div>
-      <p>Profile</p>
+      <h1> My Missions</h1>
+     <Table bordered className="profileTable">
+      <tbody>
+      <tr>
+        <td>Teslar</td>
+        </tr>
+        <tr>
+        <td>SES</td>
+        </tr>
+        <tr>
+        <td>SES</td>
+        </tr>
+        
+  
+      
+      </tbody>
+      
+
+     </Table>
     </div>
   );
 }
