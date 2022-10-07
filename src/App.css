@@ -63,7 +63,7 @@
   text-decoration: underline;
 }
 
-table button {
+.join-btn {
   display: inline-block;
   text-align: center;
   font-size: 0.8rem;
@@ -80,6 +80,10 @@ table button {
   border-radius: 0.3rem;
   text-align: center;
   background-color: #18a2b8;
+}
+
+.red {
+  background-color: #989ea4;
 }
 
 table tbody tr:nth-child(even) {
@@ -112,4 +116,22 @@ table tbody tr:nth-child(even) {
 
 .profileTable {
   width: 50%;
+}
+
+.leave-btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 7rem;
+  padding: 0.5rem 0;
+  border-radius: 0.3rem;
+  border: 0.4px solid red;
+  background-color: #fff;
+  color:red;
+}
+
+.align {
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
 }
