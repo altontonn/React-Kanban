@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Table from 'react-bootstrap/Table';
+import { Table } from 'react-bootstrap';
 import { getMission } from '../redux/MissionsActions/MissionAction';
 import Mission from './Mission';
 
 function Missions() {
   const missions = useSelector((state) => state.mission);
-  console.log(missions);
   const dispatch = useDispatch();
   useEffect(() => {
     setTimeout(() => {
       if (missions.length === 0) dispatch(getMission());
     });
-  }, []);
+  }, [missions, dispatch]);
 
   return (
     <div>
