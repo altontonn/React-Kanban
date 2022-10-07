@@ -142,19 +142,6 @@
   padding: 3px 6px;
 }
 
-.cancel {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px 0 hsl(180deg 5% 84% / 50%);
-  color: #000;
-  border: 1px solid;
-  padding: 3px 6px;
-}
-
-.availableRockets {
-  width: 45%;
-}
-
 .rocketTable {
   border: 1px solid rgb(214, 210, 210);
   border-bottom: none;
@@ -176,4 +163,17 @@
 .container {
   display: flex;
   gap: 1rem;
+}
+
+.cancel {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 hsl(180deg 5% 84% / 50%);
+  color: #000;
+  border: 1px solid;
+  padding: 3px 6px;
+}
+
+.availableRockets {
+  width: 45%;
 }
