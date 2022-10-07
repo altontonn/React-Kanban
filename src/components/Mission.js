@@ -1,8 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
+import { joinMission, leaveMisson } from '../redux/profile/profileMission';
 
 const Mission = (props) => {
   const { missionName, missionDesc } = props;
+  const joinedMission = useSelector((state) => state.profile.joined);
+  const dispatch = useDispatch();
+
+  const handleJoin = (e) => {
+    e.preventDefault();
+    const name = missionName;
+    if (joinedMission.includes(name)) {
+      return;
+    }
+    dispatch(joinMission(name));
+  };
+  const handleLeave = (e) => {
+    e.preventDefault();
+    dispatch(leaveMisson(missionName));
+  };
 
   return (
     <tr>
@@ -11,12 +28,27 @@ const Mission = (props) => {
         {missionName}
       </td>
       <td>{missionDesc}</td>
-      <td colSpan={1}>
+      {joinedMission.includes(missionName) && (
+      <td colSpan={1} className="align">
         <span className="badge-primary">Active Member</span>
       </td>
-      <td>
-        <button type="button">Join Mission</button>
+      )}
+
+      {!joinedMission.includes(missionName) && (
+      <td colSpan={1} className="align">
+        <span className="badge-primary red">Not a Member</span>
       </td>
+      )}
+      {joinedMission.includes(missionName) && (
+      <td className="align">
+        <button type="button" className="leave-btn" onClick={handleLeave}>Leave Mission</button>
+      </td>
+      )}
+      {!joinedMission.includes(missionName) && (
+      <td className="align">
+        <button type="button" className="join-btn align-middle" onClick={handleJoin}>Join Mission</button>
+      </td>
+      )}
     </tr>
 
   );

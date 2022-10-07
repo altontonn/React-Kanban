@@ -15,7 +15,7 @@ function Missions() {
 
   return (
     <div>
-      <Table bordered>
+      <Table bordered className="MissionPageTable">
         <thead>
           <tr>
             <th> Missions</th>
