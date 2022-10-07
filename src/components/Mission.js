@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { joinMission, leaveMisson } from '../redux/profile/profile';
+import { joinMission, leaveMisson } from '../redux/profile/profileMission';
 
 const Mission = (props) => {
   const { missionName, missionDesc } = props;

@@ -86,7 +86,7 @@
   background-color: #989ea4;
 }
 
-table tbody tr:nth-child(even) {
+.MissionPageTable tbody tr:nth-child(even) {
   background-color: #ececec;
 }
 
@@ -115,7 +115,7 @@ table tbody tr:nth-child(even) {
 }
 
 .profileTable {
-  width: 50%;
+  width: 100%;
 }
 
 .leave-btn {
@@ -134,4 +134,46 @@ table tbody tr:nth-child(even) {
   height: auto;
   text-align: center;
   vertical-align: middle;
+}
+
+.spanMessage {
+  background-color: #4698a1;
+  color: #fff;
+  padding: 3px 6px;
+}
+
+.cancel {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 hsl(180deg 5% 84% / 50%);
+  color: #000;
+  border: 1px solid;
+  padding: 3px 6px;
+}
+
+.availableRockets {
+  width: 45%;
+}
+
+.rocketTable {
+  border: 1px solid rgb(214, 210, 210);
+  border-bottom: none;
+}
+
+.list {
+  padding: 16px;
+  border-bottom: 1px solid rgb(214, 210, 210);
+}
+
+.displayMission {
+  width: 50%;
+}
+
+.displayRocket {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
 }

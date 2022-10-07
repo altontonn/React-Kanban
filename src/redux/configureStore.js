@@ -4,7 +4,7 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { rocketReducer } from './RocketActions/RocketAction';
 import { misssionReducer } from './MissionsActions/MissionAction';
-import profileReducer from './profile/profile';
+import profileReducer from './profile/profileMission';
 
 const persistConfig = {
   key: 'main-root',

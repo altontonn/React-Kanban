@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 import Missions from './MissionsList';
-import Profile from './Profile';
 import RocketList from './RocketList';
+import Profile from './Profile';
 
 function RouterNavLink() {
   return (
