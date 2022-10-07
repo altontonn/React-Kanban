@@ -29,7 +29,8 @@ const profileReducer = (state = initialSate, action = {}) => {
         ...state,
         joined: state.joined.filter((item) => item !== action.payload),
       };
-    default: return state;
+    default:
+      return state;
   }
 };
 

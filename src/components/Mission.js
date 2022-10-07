@@ -29,28 +29,35 @@ const Mission = (props) => {
       </td>
       <td>{missionDesc}</td>
       {joinedMission.includes(missionName) && (
-      <td colSpan={1} className="align">
-        <span className="badge-primary">Active Member</span>
-      </td>
+        <td colSpan={1} className="align">
+          <span className="badge-primary">Active Member</span>
+        </td>
       )}
 
       {!joinedMission.includes(missionName) && (
-      <td colSpan={1} className="align">
-        <span className="badge-primary red">Not a Member</span>
-      </td>
+        <td colSpan={1} className="align">
+          <span className="badge-primary red">Not a Member</span>
+        </td>
       )}
       {joinedMission.includes(missionName) && (
-      <td className="align">
-        <button type="button" className="leave-btn" onClick={handleLeave}>Leave Mission</button>
-      </td>
+        <td className="align">
+          <button type="button" className="leave-btn" onClick={handleLeave}>
+            Leave Mission
+          </button>
+        </td>
       )}
       {!joinedMission.includes(missionName) && (
-      <td className="align">
-        <button type="button" className="join-btn align-middle" onClick={handleJoin}>Join Mission</button>
-      </td>
+        <td className="align">
+          <button
+            type="button"
+            className="join-btn align-middle"
+            onClick={handleJoin}
+          >
+            Join Mission
+          </button>
+        </td>
       )}
     </tr>
-
   );
 };
 

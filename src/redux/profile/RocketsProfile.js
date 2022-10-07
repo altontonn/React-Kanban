@@ -20,8 +20,10 @@ const AvailableRockets = () => {
       <div className="availableRockets">
         <h1>My Rockets</h1>
         <div className="rocketTable">
-          { rockets.map((rocket) => (
-            <p className="list" key={rocket.length}>{rocket.rocket_name}</p>
+          {rockets.map((rocket) => (
+            <p className="list" key={rocket.length}>
+              {rocket.rocket_name}
+            </p>
           ))}
         </div>
       </div>

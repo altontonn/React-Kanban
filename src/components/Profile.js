@@ -8,7 +8,6 @@ function Profile() {
   const profileMissonData = useSelector((state) => state.profile.joined);
   return (
     <div className="container">
-
       {profileMissonData.length === 0 ? (
         <div className="displayMission">
           <h1> My Missions</h1>
@@ -18,7 +17,6 @@ function Profile() {
         <div className="displayMission">
           <h1> My Missions</h1>
           <Table bordered className="profileTable">
-
             <tbody>
               {profileMissonData.map((item) => (
                 <tr key={uuid}>
@@ -30,7 +28,6 @@ function Profile() {
         </div>
       )}
       <AvailableRockets className="displayRocket" />
-
     </div>
   );
 }

@@ -14,9 +14,17 @@ function Nav() {
         </div>
         <div className="menu">
           <ul>
-            <li><NavLink to="/rockets">Rockets</NavLink></li>
-            <li><NavLink to="/missions">Missions</NavLink></li>
-            <li><NavLink end to="/">My Profile</NavLink></li>
+            <li>
+              <NavLink to="/rockets">Rockets</NavLink>
+            </li>
+            <li>
+              <NavLink to="/missions">Missions</NavLink>
+            </li>
+            <li>
+              <NavLink end to="/">
+                My Profile
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

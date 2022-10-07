@@ -19,7 +19,7 @@ export const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case `${DISPLAY}/fulfilled`:
       // eslint-disable-next-line
-      console.log('state: ', state);
+      console.log("state: ", state);
       return action.payload.rocket;
     case STATUS: {
       return state.map((rocket) => {

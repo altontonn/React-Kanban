@@ -25,7 +25,7 @@ function Missions() {
           </tr>
         </thead>
         <tbody>
-          { missions.map((item) => (
+          {missions.map((item) => (
             <Mission
               key={missions.length}
               missionName={item.mission_name}

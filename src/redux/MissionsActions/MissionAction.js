@@ -13,18 +13,15 @@ export const getMission = createAsyncThunk(GET_MISSION, async () => {
   try {
     const res = await fetch(url);
     const data = await res.json();
-    const missions = data.map((item) => (
-
-      {
-        mission_id: item.mission_id,
-        mission_name: item.mission_name,
-        description: item.description,
-        joined: false,
-      }
-    ));
+    const missions = data.map((item) => ({
+      mission_id: item.mission_id,
+      mission_name: item.mission_name,
+      description: item.description,
+      joined: false,
+    }));
     return { mission: missions };
   } catch (err) {
-    return (err);
+    return err;
     // return 'Mission data failed';
   }
 });
