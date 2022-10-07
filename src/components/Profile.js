@@ -12,7 +12,7 @@ function Profile() {
       {profileMissonData.length === 0 ? (
         <div className="displayMission">
           <h1> My Missions</h1>
-          <p>No Mission  </p>
+          <p>No Missions joined </p>
         </div>
       ) : (
         <div className="displayMission">
