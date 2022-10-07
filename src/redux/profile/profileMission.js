@@ -1,5 +1,5 @@
-const JOIN_MISSION = "spacehub/missions/JOIN_MISSION";
-const LEAVE_MISSION = "spacehub/missions/LEAVE_MISSION";
+const JOIN_MISSION = 'spacehub/missions/JOIN_MISSION';
+const LEAVE_MISSION = 'spacehub/missions/LEAVE_MISSION';
 
 const initialSate = {
   reserved: [],

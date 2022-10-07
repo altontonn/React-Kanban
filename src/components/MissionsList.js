@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { Table } from "react-bootstrap";
-import { getMission } from "../redux/MissionsActions/MissionAction";
-import Mission from "./Mission";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { Table } from 'react-bootstrap';
+import { getMission } from '../redux/MissionsActions/MissionAction';
+import Mission from './Mission';
 
 function Missions() {
   const missions = useSelector((state) => state.mission);

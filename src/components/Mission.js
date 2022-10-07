@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { useDispatch, useSelector } from "react-redux";
-import { joinMission, leaveMisson } from "../redux/profile/profileMission";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
+import { joinMission, leaveMisson } from '../redux/profile/profileMission';
 
 const Mission = (props) => {
   const { missionName, missionDesc } = props;
@@ -23,7 +23,10 @@ const Mission = (props) => {
 
   return (
     <tr>
-      <td> {missionName}</td>
+      <td>
+        {' '}
+        {missionName}
+      </td>
       <td>{missionDesc}</td>
       {joinedMission.includes(missionName) && (
         <td colSpan={1} className="align">

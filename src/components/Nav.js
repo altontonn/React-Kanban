@@ -1,8 +1,8 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import "../App.css";
-import pic from "../img/planet.png";
-import RouterNavLink from "./Router";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../App.css';
+import pic from '../img/planet.png';
+import RouterNavLink from './Router';
 
 function Nav() {
   return (

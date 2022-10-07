@@ -1,12 +1,12 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const initalstate = [];
 
 // API url
-const url = "https://api.spacexdata.com/v3/missions";
+const url = 'https://api.spacexdata.com/v3/missions';
 
 // create action type
-const GET_MISSION = "spacehub/missions/GET_MISSION";
+const GET_MISSION = 'spacehub/missions/GET_MISSION';
 
 // create actions
 export const getMission = createAsyncThunk(GET_MISSION, async () => {
@@ -29,7 +29,7 @@ export const getMission = createAsyncThunk(GET_MISSION, async () => {
 // create a redudcer
 export const misssionReducer = (state = initalstate, action) => {
   switch (action.type) {
-    case "spacehub/missions/GET_MISSION/fulfilled":
+    case 'spacehub/missions/GET_MISSION/fulfilled':
       return action.payload.mission;
     default:
       return state;

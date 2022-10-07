@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   fetchRockets,
   ChangeStatus,
-} from "../redux/RocketActions/RocketAction";
+} from '../redux/RocketActions/RocketAction';
 
 function RocketList() {
   const rockets = useSelector((state) => state.rockets);

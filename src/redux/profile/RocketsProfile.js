@@ -1,9 +1,9 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const AvailableRockets = () => {
   const rockets = useSelector((state) => state.rockets).filter(
-    (rocket) => rocket.reserved === true
+    (rocket) => rocket.reserved === true,
   );
   if (rockets.length === 0) {
     return (
