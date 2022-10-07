@@ -127,7 +127,7 @@ table tbody tr:nth-child(even) {
   border-radius: 0.3rem;
   border: 0.4px solid red;
   background-color: #fff;
-  color:red;
+  color: red;
 }
 
 .align {
