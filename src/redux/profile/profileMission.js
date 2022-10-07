@@ -1,5 +1,5 @@
-const JOIN_MISSION = 'spacehub/missions/JOIN_MISSION';
-const LEAVE_MISSION = 'spacehub/missions/LEAVE_MISSION';
+const JOIN_MISSION = "spacehub/missions/JOIN_MISSION";
+const LEAVE_MISSION = "spacehub/missions/LEAVE_MISSION";
 
 const initialSate = {
   reserved: [],
@@ -29,7 +29,8 @@ const profileReducer = (state = initialSate, action = {}) => {
         ...state,
         joined: state.joined.filter((item) => item !== action.payload),
       };
-    default: return state;
+    default:
+      return state;
   }
 };
 

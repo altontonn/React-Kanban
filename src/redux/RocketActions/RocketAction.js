@@ -1,7 +1,7 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
+import { createAsyncThunk } from "@reduxjs/toolkit";
 
-const DISPLAY = 'REACT-KANBAN/src/RocketActions/DISPLAY';
-const STATUS = 'REACT-KANBAN/src/RocketActions/DISPLAY';
+const DISPLAY = "REACT-KANBAN/src/RocketActions/DISPLAY";
+const STATUS = "REACT-KANBAN/src/RocketActions/DISPLAY";
 const initialState = [];
 
 export const ChangeStatus = (id) => ({
@@ -10,7 +10,7 @@ export const ChangeStatus = (id) => ({
 });
 
 export const fetchRockets = createAsyncThunk(DISPLAY, async () => {
-  const response = await fetch('https://api.spacexdata.com/v3/rockets');
+  const response = await fetch("https://api.spacexdata.com/v3/rockets");
   const rockets = await response.json();
   return { rocket: rockets };
 });
@@ -19,7 +19,7 @@ export const rocketReducer = (state = initialState, action) => {
   switch (action.type) {
     case `${DISPLAY}/fulfilled`:
       // eslint-disable-next-line
-      console.log('state: ', state);
+      console.log("state: ", state);
       return action.payload.rocket;
     case STATUS: {
       return state.map((rocket) => {
