@@ -13,7 +13,7 @@ export const joinMission = (payload) => ({
 });
 
 // Create Leave mission action
-const leaveMisson = (payload) => ({
+export const leaveMisson = (payload) => ({
   type: LEAVE_MISSION,
   payload,
 });
