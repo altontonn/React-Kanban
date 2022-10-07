@@ -1,26 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { joinMission,leaveMisson} from '../redux/profile/profile';
 import { useDispatch, useSelector } from 'react-redux';
-
+import { joinMission, leaveMisson } from '../redux/profile/profile';
 
 const Mission = (props) => {
   const { missionName, missionDesc } = props;
   const joinedMission = useSelector((state) => state.profile.joined);
   const dispatch = useDispatch();
 
-  const handleJoin = (e) =>{
+  const handleJoin = (e) => {
     e.preventDefault();
     const name = missionName;
-    if(joinedMission.includes(name)){ 
-      return
+    if (joinedMission.includes(name)) {
+      return;
     }
-    dispatch(joinMission(name))
-  }
-  const handleLeave = (e) =>{
+    dispatch(joinMission(name));
+  };
+  const handleLeave = (e) => {
     e.preventDefault();
-    dispatch(leaveMisson(missionName))
-  }
+    dispatch(leaveMisson(missionName));
+  };
 
   return (
     <tr>
@@ -42,16 +41,15 @@ const Mission = (props) => {
       )}
       {joinedMission.includes(missionName) && (
       <td>
-        <button type="button" onClick= {handleLeave}>Join Mission</button>
+        <button type="button" onClick={handleLeave}>Join Mission</button>
       </td>
       )}
       {!joinedMission.includes(missionName) && (
       <td>
-        <button type="button" onClick= {handleJoin}>Join Mission</button>
+        <button type="button" onClick={handleJoin}>Join Mission</button>
       </td>
       )}
     </tr>
-
 
   );
 };
