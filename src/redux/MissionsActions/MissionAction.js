@@ -24,8 +24,8 @@ export const getMission = createAsyncThunk(GET_MISSION, async () => {
     ));
     return { mission: missions };
   } catch (err) {
-    alert(err);
-    return 'Mission data failed';
+    return (err);
+    // return 'Mission data failed';
   }
 });
 
