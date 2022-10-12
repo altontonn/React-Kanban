@@ -21,7 +21,7 @@
 
 
 ## Live Demo
-[coming soon]()
+[See Live](https://rocket-mission.netlify.app/)
 
 ## 🧰 Tools
 
